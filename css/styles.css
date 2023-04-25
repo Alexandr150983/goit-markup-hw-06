@@ -268,6 +268,7 @@ button {
 
 .hero-btn:hover,
 .hero-btn:focus {
+    outline: none;
     background-color: var(--accent-bg-color);
 }
 
@@ -560,6 +561,7 @@ button {
 }
 
 .email {
+    padding: 8px 16px;
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
@@ -611,6 +613,7 @@ button {
 
 .footer-btn:hover,
 .footer-btn:focus {
+    outline: none;
     background-color: var(--accent-bg-color);
 }
 
@@ -838,6 +841,7 @@ button {
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
+    outline: none;
     background-color: var(--accent-bg-color);
 }
 
@@ -962,7 +966,8 @@ button {
 }
 
 .modal-form-check:checked+.modal-form-psevdo-checkbox {
-    border-color: var(--accent-bg-color);    background-color: var(--accent-bg-color);
+    border-color: var(--accent-bg-color);
+    background-color: var(--accent-bg-color);
 }
 
 .modal-form-check:checked+.modal-form-psevdo-checkbox .checkbox-icon {
@@ -996,6 +1001,7 @@ button {
     color: var(--secondary-form-text-color);
     transition: color var(--transition-dur-timing-func);
 }
+
 .privacy-policy:hover,
 .privacy-policy:focus {
     color: var(--accent-text-color);
@@ -1027,45 +1033,17 @@ button {
 
 .modal-form-submit:hover,
 .modal-form-submit:focus {
+    outline: none;
     background-color: var(--accent-bg-color);
-}
-
-.modal-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 16px 32px;
-
-    width: 169px;
-    height: 56px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--white-text-color);
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    background-color: var(--accent-color);
-
-    transition: background-color var(--transition-dur-timing-func);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-    background-color: var(--accent-bg-color);
-}
-
-.modal-btn:hover .modal-icon,
-.modal-btn:focus .modal-icon {
-    fill: var(--white-text-color);
 }
 
 .modal-icon {
     fill: var(--secondary-fill-color);
 
     transition: fill var(--transition-dur-timing-func);
+}
+
+.modal-form-submit:hover .modal-icon,
+.modal-form-submit:focus .modal-icon {
+    fill: var(--white-text-color);
 }
