@@ -994,6 +994,11 @@ button {
     letter-spacing: 0.04em;
     text-decoration-line: underline;
     color: var(--secondary-form-text-color);
+    transition: color var(--transition-dur-timing-func);
+}
+.privacy-policy:hover,
+.privacy-policy:focus {
+    color: var(--accent-text-color);
 }
 
 .modal-form-submit {
